@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML CSS JS Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- Grid Layout -->
+  <div class="grid-container">
+    <div class="box">Grid Box 1</div>
+    <div class="box">Grid Box 2</div>
+    <div class="box">Grid Box 3</div>
+  </div>
+
+  <!-- Contact Form -->
+  <div class="form-container">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
+
+  <!-- To-Do List -->
+  <div class="todo-section">
+    <h2>To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Enter a new task" />
+    <button onclick="addTask()">Add</button>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
