@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Web Projects</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🌐 My Web Projects</h1>
+    <nav>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#todo-section">To-Do</a>
+      <a href="#product-section">Products</a>
+    </nav>
+  </header>
+
+  <section id="portfolio">
+    <h2>About Me</h2>
+    <p>I’m a passionate web developer with experience in building responsive websites and web applications. I enjoy solving problems and bringing ideas to life in the browser.</p>
+
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>💻 HTML, CSS, JavaScript, React, Node.js</li>
+      <li>🛠️ Git, GitHub, VS Code, Figma</li>
+      <li>🔧 Backend: Java (Spring Boot), Express</li>
+      <li>📦 Databases: MySQL, MongoDB</li>
+      <li>🌐 Responsive Design, SEO Basics</li>
+    </ul>
+
+    <h2>Education</h2>
+    <div class="card">
+      <h3>Bachelor of Technology in Computer Science</h3>
+      <p>XYZ University | 2020 - 2024</p>
+      <p>CGPA: 8.5/10</p>
+    </div>
+
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Frontend Developer Intern</h3>
+      <p>ABC Tech Pvt Ltd | June 2023 - Aug 2023</p>
+      <ul>
+        <li>Built dynamic UI components using React</li>
+        <li>Worked on performance optimization and cross-browser compatibility</li>
+        <li>Collaborated with backend team via REST APIs</li>
+      </ul>
+    </div>
+
+    <h2>Certifications</h2>
+    <ul class="skills-list">
+      <li>✔️ Responsive Web Design - freeCodeCamp</li>
+      <li>✔️ JavaScript Algorithms and Data Structures - freeCodeCamp</li>
+      <li>✔️ Backend with Spring Boot - Udemy</li>
+    </ul>
+
+    <h2>Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>To-Do App</h3>
+        <p>Manage tasks with local storage.</p>
+      </div>
+      <div class="card">
+        <h3>Product Listing</h3>
+        <p>Filter and sort products with a clean UI.</p>
+      </div>
+    </div>
+
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p><a href="your-resume.pdf" class="resume-link" target="_blank">📄 Download My Resume (PDF)</a></p>
+  </section>
+
+  <section id="todo-section">
+    <h2>📝 To-Do List</h2>
+    <div class="todo-container">
+      <input type="text" id="taskInput" placeholder="Enter a new task" />
+      <button onclick="addTask()">Add Task</button>
+    </div>
+    <ul id="taskList"></ul>
+  </section>
+
+  <section id="product-section">
+    <h2>🛍️ Product Listings</h2>
+    <div class="filters">
+      <select id="categoryFilter">
+        <option value="">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="books">Books</option>
+      </select>
+      <select id="sortOption">
+        <option value="">Sort By</option>
+        <option value="price">Price</option>
+        <option value="rating">Rating</option>
+      </select>
+    </div>
+    <div class="cards" id="productList"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Name | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

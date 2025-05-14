@@ -1,0 +1,187 @@
+:root {
+    --primary: #6a0dad;
+    --secondary: #ff69b4;
+    --accent: #00bcd4;
+    --bg: #fdf6ff;
+    --card-bg: #ffffff;
+    --text-dark: #333333;
+    --text-light: #777777;
+    --border: #e0d7ec;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text-dark);
+  }
+  
+  header, footer {
+    background: var(--primary);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    color: #ffe4ff;
+  }
+  
+  nav a {
+    color: #ffd9f5;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+  }
+  
+  nav a:hover {
+    color: var(--accent);
+  }
+  
+  section {
+    padding: 2rem;
+    border-bottom: 2px dashed var(--border);
+    background: linear-gradient(to right, #fdf6ff, #fce3ff);
+  }
+  
+  h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px var(--border);
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(106, 13, 173, 0.1);
+    flex: 1 1 45%;
+    border: 2px solid var(--border);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+  }
+  
+  .contact-form input,
+  .contact-form textarea,
+  .todo-container input,
+  .todo-container button {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border-radius: 0.5rem;
+    border: 1px solid var(--border);
+    background-color: #fff0f9;
+  }
+  
+  .contact-form button,
+  .todo-container button {
+    background: var(--secondary);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .contact-form button:hover,
+  .todo-container button:hover {
+    background: #ff85b4;
+    transform: scale(1.05);
+  }
+  
+  .todo-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-bottom: 1rem;
+  }
+  
+  #taskList {
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+  }
+  
+  #taskList li {
+    background: #ffe4ff;
+    border: 1px solid var(--border);
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  #taskList li:hover {
+    background: #fcd6f7;
+  }
+  
+  .filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .filters select {
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--border);
+    background: #f3e8ff;
+  }
+  
+  .skills-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .skills-list li {
+    margin: 0.3rem 0;
+    background: #efdbff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .resume-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--primary);
+    font-weight: bold;
+    text-decoration: none;
+    background: #fce3ff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background 0.2s ease;
+  }
+  
+  .resume-link:hover {
+    background: #f9caff;
+  }
+  
+  footer {
+    font-size: 0.9rem;
+    background: var(--primary);
+    color: #ffd9f5;
+  }
+  
+  @media (max-width: 768px) {
+    .cards {
+      flex-direction: column;
+    }
+  }
+  
